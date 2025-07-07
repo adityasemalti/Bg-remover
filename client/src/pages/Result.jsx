@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Navbar from '../components/NAvbar';
+import Navbar from '../components/Navbar';
 import p1 from '../assets/p1.jpg';
 import { AppContext } from '../context/AppContext';
 
