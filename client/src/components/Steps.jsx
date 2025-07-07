@@ -9,15 +9,15 @@ const Steps = () => {
         <div className='w-screen mt-20 '>
             <h2 className='text-center text-2xl font-bold text-gray-700'>Steps to Remove <span className='bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>Background</span>  <br /> from Your image</h2>
             <div className="flex flex-col md:flex-row   items-center justify-center md:justify-around mt-10">
-                <div className='w-[300px] h-[100px]  mt-10 rounded-lg shadow flex items-center gap-2'>
+                <div className='w-[300px] h-[100px]  mt-10 rounded-lg shadow flex items-center gap-2 hover:scale-105 duration-200 border-black '>
                     <img src={upload} alt="" className='w-14 h-14 p-1'/>
                     <p className='font-semibold'>Upload image in jpg/jpeg format</p>
                 </div>
-                <div className='w-[300px] h-[100px]  mt-10 rounded-lg shadow flex items-center gap-2'>
+                <div className='w-[300px] h-[100px]  mt-10 rounded-lg shadow flex items-center gap-2 hover:scale-105 duration-200 border-black'>
                     <img src={logo} alt="" className='w-14 h-14'/>
                     <p className='font-semibold'>Remove Background</p>
                 </div>
-                <div className='w-[300px] h-[100px]  mt-10 rounded-lg shadow flex items-center gap-2'>
+                <div className='w-[300px] h-[100px]  mt-10 rounded-lg shadow flex items-center gap-2 hover:scale-105 duration-200 border-black'>
                     <img src={down} alt="" className='w-14 h-14 p-2'/>
                     <p className='font-semibold'>Download the image</p>
                 </div>

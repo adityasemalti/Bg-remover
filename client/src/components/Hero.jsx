@@ -1,8 +1,13 @@
 import React from 'react'
 import hero1 from '../assets/hero-1.png'
 import hero2 from '../assets/hero2.jpg'
+import { useContext } from 'react'
+import { AppContext } from '../context/AppContext'
 
 const Hero = () => {
+
+    const {removebg }= useContext(AppContext)
+
     return (
         <div className="w-full px-4 md:px-10 mt-10">
            
@@ -18,12 +23,13 @@ const Hero = () => {
                         Ipsum itaque recusandae pariatur expedita eaque repellat eos laborum quidem minus eveniet!
                     </p>
 
-                    <label htmlFor="image" className="inline-block">
+                    <label htmlFor="image1" className="inline-block">
                         <div
                             className="mt-4 py-3 px-6 rounded-full text-white font-semibold bg-gradient-to-tr from-purple-600 to-pink-500 hover:scale-105 duration-150 cursor-pointer text-center"
                         >
                             Upload Image
                         </div>
+                        <input onChange={(e)=>{ removebg(e.target.files[0])}} type="file" accept='image/*' name="image" id="image1"  hidden/>
                     </label>
                 </div>
 
